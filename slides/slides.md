@@ -103,24 +103,6 @@ exclude = ["migrations"]
 
 
 
-#### Ruff in Action
-
-- Show a before-and-after example of Python code:
-- Code with errors and poor formatting.
-- The same code after running Ruff.
-- Highlight performance metrics for a large codebase.
-
-
-#### Before
-```python
-```
-
-
-#### After
-```python
-```
-
-
 #### Challenges with Ruff
 - Less flexible for highly customized linting needs.
 - Requires Rust for local builds, which may be unfamiliar to some Python developers.
