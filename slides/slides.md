@@ -102,6 +102,11 @@ exclude = ["migrations"]
   - https://docs.astral.sh/ruff/integrations/
 
 
+#### Ruff in Action
+
+The following file shows an example for running the ruff reformatter and linter
+https://github.com/ceez/Ruff-Python-Meetup-20241119/blob/main/src/code.md
+
 
 #### Challenges with Ruff
 - Less flexible for highly customized linting needs.
