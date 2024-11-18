@@ -1,4 +1,4 @@
-# Formatting
+# Reformatting code
 
 ## The original file
 
@@ -26,10 +26,14 @@ if __name__ == "__main__":
 
 ## The ruff invocation
 
+You can perform a dry-run to see whether the file will be reformatted
+
+
 ```bash
 $ ruff format --check sample.py
 Would reformat: sample.py
 1 file would be reformatted
+
 $ ruff format sample.py
 1 file reformatted
 ```
@@ -118,6 +122,8 @@ Found 6 errors.
 
 ```bash
 $ ruff rule D103
+```
+
 # undocumented-public-function (D103)
 
 Derived from the **pydocstyle** linter.
