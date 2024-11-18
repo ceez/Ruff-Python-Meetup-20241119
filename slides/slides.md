@@ -1,6 +1,4 @@
-### Ruff: A Fast and Modern Python Linter
-
-##### Optimizing Python Code at Lighting Speed
+### Ruff: A Modern Python Linter
 
 Chris Cowan - Nov 19, 2024
 
@@ -15,25 +13,24 @@ Chris Cowan - Nov 19, 2024
 
 
 #### Key Features
-- Up to 100x faster than traditional Python linters like Flake8 or pylint.
+- Up to 100x faster than traditional linters like Flake8 or pylint.
 - Integrates functionality of tools like Flake8, isort, pyupgrade, and more.
 - Highly customizable with fine-grained rule configuration.
 - Automatically fixes many issues (e.g., formatting, imports).
 
 
 #### Key Features (cont.)
-- Supports over 500 lint rules, including Python best practices, style, and security.
+- Supports over 800 lint rules, including best practices, style, and security.
 - Runs standalone and does not rely on Python for execution.
 
 
 
-### Installation and Setup
-
+#### Installation and Setup
 #### Install
 ```bash
 $ pip install ruff
 
-$ brew install ruff # On MacOS
+$ brew install ruff # On MacOS without python preinstalled
 ```
 
 
@@ -85,7 +82,11 @@ For help with a specific command, see: `ruff help <command>`.
 
 #### Configuration
 
-pyproject.toml file
+- Config in 'pyproject.toml' or 'ruff.toml'
+  - https://docs.astral.sh/ruff/configuration/
+
+- Sample pyproject.toml file:
+
 ```toml
 [tool.ruff]
 line-length = 88
@@ -94,55 +95,54 @@ exclude = ["migrations"]
 ```
 
 
+#### Integrations
+- Editors and IDEs
+  - https://docs.astral.sh/ruff/editors/setup/
+- CI/CD
+  - https://docs.astral.sh/ruff/integrations/
+
+
 
 #### Ruff in Action
 
 - Show a before-and-after example of Python code:
 - Code with errors and poor formatting.
 - The same code after running Ruff.
--Highlight performance metrics for a large codebase.
-- Visual: Screenshots or animations of Ruff fixing code in real time.
+- Highlight performance metrics for a large codebase.
 
 
+#### Before
+```python
+```
 
-#### Why Choose Ruff?
-- Save time with unparalleled speed.
-- Simplify your tooling setup by replacing multiple tools.
-- Improve code quality and maintainability.
-- Keep your team aligned on coding standards.
 
-Visual: A benefits diagram or testimonial quotes from users.
-
+#### After
+```python
+```
 
 
 #### Challenges with Ruff
-
-Limited Custom Rules: Less flexible for highly customized linting needs.
-Rust Dependency: Requires Rust for local builds, which may be unfamiliar to some Python developers.
-Rapid Updates: Fast-evolving tool; staying current may be a challenge for large teams.
-Visual: A balanced pros-and-cons table.
+- Less flexible for highly customized linting needs.
+- Requires Rust for local builds, which may be unfamiliar to some Python developers.
+- Fast-evolving tool; staying current may be a challenge for large teams.
 
 
 
-
-#### Looking in the Crystal Ball for Ruff
-
-Continued expansion of supported rules and integrations.
-More autofix capabilities.
-Community-driven features and contributions.
-Visual: Roadmap or feature request examples from the Ruff GitHub repository.
-
----
-[Roadmap](https://ruff.rs/assets/roadmap.png)
+#### Looking into the Crystal Ball
+- Continued expansion of supported rules and integrations.
+- More autofix capabilities.
+- Community-driven features and contributions. Request new features from the GitHub repository
 
 
 
-#### Try Ruff Today!
-
-Install Ruff and try it on your codebase.
-
-- https://astral.sh - Home of ruff and uv
-- https://ruff.rs
-- https://docs.astral.sh/ruff/
-
-- https://github.com/astral-sh/ruff
+#### Resources
+- Home Pages and Docs::
+  - [https://astral.sh](https://astral.sh)
+  - [https://ruff.rs](https://ruff.rs)
+  - [https://docs.astral.sh/ruff/](https://docs.astral.sh/ruff/)
+- GitHub Repo:
+  - [https://github.com/astral-sh/ruff](https://github.com/astral-sh/ruff)
+- Playground:
+  - [https://play.ruff.rs/](https://play.ruff.rs)
+- Test Cases:
+  - [https://github.com/pylint-dev/pylint/tree/main/tests](https://github.com/pylint-dev/pylint/tree/main/tests)
