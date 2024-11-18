@@ -119,12 +119,13 @@ https://github.com/ceez/Ruff-Python-Meetup-20241119/blob/main/src/code.md
 #### Looking into the Crystal Ball
 - Continued expansion of supported rules and integrations.
 - More autofix capabilities.
-- Community-driven features and contributions. Request new features from the GitHub repository
+- Community-driven features and contributions. 
+- New features can be requested at the GitHub repository
 
 
 
 #### Resources
-- Home Pages and Docs::
+- Home Pages and Docs:
   - [https://astral.sh](https://astral.sh)
   - [https://ruff.rs](https://ruff.rs)
   - [https://docs.astral.sh/ruff/](https://docs.astral.sh/ruff/)
